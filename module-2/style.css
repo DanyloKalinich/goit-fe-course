@@ -1,114 +1,120 @@
 
-.menu-box{
+html {
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+    }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+.container {
+    padding-bottom: 70px;
+    width: 900px;
+    margin: 0px auto;
+    color: #626262;
+}
+a {display: block;}
+
+nav a {
+    font-size: 14px;
+    text-transform: uppercase; 
+    list-style: none;
+    text-decoration: none;
+    color: #626262;
+}
+
+a:hover, a:focus {
+    color: #03a9f4;
+}
+
+header{padding: 77px 0px 104px}
+
+.navigation {
+    font-size: 0px;
+    padding: 0px;
+    width: 900px;
     text-align: center;
 }
-.menu-item {
+
+.navigation li{
+    margin-right: 105px;
     display: inline-block;
-    list-style: none;
 }
-.menu-item a{
-  font-size: 14px;
-  font-weight: regular;
-    font-family: "Playfair Display";
-     color: rgb(98, 98, 98);
-    text-transform: uppercase;
-    text-decoration: none;
-    position: relative;
-    top: 100.06px;
-    width: 71px;
-    height: 11px;
-    z-index: 70;
-    padding: 70px;
+
+.navigation li:last-child{
+    margin-right: 0px;
 }
-.some1{
-    position: absolute;
-    left: 150px;
-    top: 191px;
+
+li{
+    display: inline-block;
+}
+ul{ 
+    padding: 0%;
+    padding-bottom: 56px;
+}
+
+article{
     width: 420px;
-    height: 280px;
-    z-index: 61;
 }
-.some2{
- 
-    position: absolute;
-    right: 150px;
-    top: 191px;
-    width: 419px;
-    height: 280px;
-    z-index: 52;      
+
+section{
+    font-size: 0;
 }
-.some3{
-    position: absolute;
-    left: 150px;
-    top: 801px;
-    width: 420px;
-    height: 280px;
-    z-index: 41;
-}
-.some4{
-    position: absolute;
-    right: 150px;
-    top: 801px;
-    width: 419px;
-    height: 280px;
-    z-index: 32;
-      
-}
-.some5{
-    position: absolute;
-    left: 150px;
-    top: 1417px;
-    width: 420px;
-    height: 280px;
-    z-index: 21;
-}
-.some6{
-        position: absolute;
-        right: 150px;
-        top: 1417px;
-        width: 419px;
-        height: 280px;
-        z-index: 12;
-      
-}
-.tutle {
-    font-size: 14px;
-    font-family: "Ubuntu";
-    color: rgb(180, 173, 158);
-    text-transform: uppercase;
-    line-height: 1.2;
-  }
-  .tatle{
-    font-family: "Playfair Display"; 
-    font-weight: regular;
+
+main ul{margin: 0px;}
+main h2{
     font-size: 30px;
-    color: rgb(98, 98, 98);
-    line-height: 1.2;
-  }
-  .tetle{
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 40px;
+}
+    
+main p {
+    line-height: 24px;
     font-size: 14px;
-    font-family: "Playfair Display";
-    color: rgb(98, 98, 98);
-    line-height: 1.714;
-  }
-  .butt{
+    margin: 0px;
+}
+
+.art1 li{
+    margin-right: 60px;
+}
+
+.art1 li:nth-child(2n){
+    margin-right: 0px;
+}
+
+.art1 li:nth-child(-n+4){
+    margin-bottom: 136px;
+}
+
+section img{
+    width: 420px 280px;
+    padding-bottom: 32px;
+    display: inline-block;
+}
+
+.description{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 32px;
+    color: #b4ad9e;
+}
+
+button {
     font-size: 20px;
-    font-family: "Playfair Display";
-    color: rgb(98, 98, 98);
-    line-height: 1.2;
-    position: absolute;
-    left: 539.87px;
-    top: 1966.5px;
-    z-index: 4;
-        border-width: 1px;
-        border-color: rgb(98, 98, 98);
-        background-color: white;
-        border-style: solid;
-        position: absolute;
-        left: 507px;
-        top: 1949px;
-        width: 162px;
-        height: 58px;
-        z-index: 3;
-        margin: 73px;
-  }
+    line-height: 24px;
+    color: #626262;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 15px 33px;
+}
+.button {
+    text-align: center;
+}
+
+button:hover, button:focus {
+    color: #03a9f4
+}
