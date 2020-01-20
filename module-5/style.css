@@ -1,0 +1,375 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+button{outline: none;}
+ul {list-style: none;}
+a{
+    text-decoration: none;
+    display: block;
+}
+body {  
+    padding-top: 38px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    text-decoration: none;
+  }
+h1 {
+    margin: 0px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 32px;
+    color: #555252;
+  }
+h1::first-letter {
+    font-weight: 800;
+    color: #1abc9c;
+  }
+.header-container {
+    padding-bottom: 40px;
+    margin: 0 auto;
+    width: 1110px;
+}
+.menu {
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.menu-item {
+    margin-top: 13px;
+    padding: 0px;
+    margin-right: 35px;
+    list-style: none;
+    float: left;
+}
+.menu-item:last-child {
+    margin-right: 0px;
+}
+.menu a {
+    font-weight: 700;
+    line-height: 11px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:#747272
+}
+.menu a:hover {
+    transition: 0.1s linear;
+    color: #1abc9c;
+}
+.menu-shop {
+    position: relative;
+}
+.submenu {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 105px;
+    z-index: 100;
+    position: absolute;
+    display: none;
+}
+.menu-shop:hover .submenu {
+    display: block;
+    right: -95%;
+}
+.submenu-item {
+    text-align: center;
+    background-color: white;
+    display: block;
+    margin-top: 3px;
+    padding-top: 5px;
+    height: 15px;
+    width: 105px;
+    border: solid #747272 1px;
+    border-radius: 5px;
+    transition: padding 0.3s linear;
+}
+.submenu-item:hover {
+    transition: 0.45s;
+    padding-left: 10px;
+}
+/* slider starts here!!! */
+
+.slider-wrapper {
+    height: 450px;
+}
+.slider {
+    z-index: 2;
+    object-fit: cover;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+}
+.slider-img {
+    filter: brightness(50%);
+    z-index: 1;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.button {
+    z-index: 4;
+    background-color: rgba(26, 188, 156, 0.65);
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.button:hover{
+    background-color: #1abc9c;
+    background-size: 50%;
+    transition: 0.3s linear;
+}
+.but-left {
+    background-image: url(img/left.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 17%;
+    transition: background-size 0.3s linear;
+}
+.but-right{
+    background-size: 25px;
+    background-image: url(img/right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 17%;
+    transition: background-size 0.3s linear;
+}
+.slider-hp {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 38.5%;
+    left: 27%;
+    top: 33%;
+    z-index: 6;
+    position: absolute;
+}
+.slider-h{
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-weight: 350;
+    color: white;
+    font-size: 40px;
+
+}
+.slider-p{
+    margin: 0px;
+    font-weight: 300;
+    color: white;
+    font-size: 16px;
+}
+main{
+    padding-top: 90px;
+    background-color: #e9f0fd;
+    padding-bottom: 90px;
+}
+
+/* main collection starts here!!!! */
+.new-coll {
+    margin: 0 auto;
+    width: 1110px;
+}
+h3 {
+    margin: 0px;
+    margin-bottom: 70px;
+    font-weight: 700;
+    line-height: 29px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #515151;
+    text-align: center;
+}
+h3::after{
+    margin: 25px auto 0px;
+    display: block;
+    content: '';
+    background-color: #1abc9c;
+    width: 150px;
+    height: 6px;
+    text-align: center;
+}
+.collection {
+    font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    float: right;
+}
+.collection li {
+    position: relative;
+    float: left;
+}
+.pics:nth-child(-n+3) {
+    margin-right: 30px;
+}
+.wrapper {
+    background-color: #323232;
+    width: 255px;
+    height: 40px;
+}
+h4 {
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+    width: 200px;
+    height: 40px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+}
+.price {
+    text-align: center;
+    float: right;
+    color: white;
+    font-weight: 700;
+    background-color: #8c8c8c;
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    line-height: 40px;
+    font-size: 18px;
+}
+.collection li:hover .wrapper {
+    transition: 0.3s linear;
+    background-color: #1abc9c;
+}
+
+.collection li:hover .price{
+    background-color: #7fd9c7;
+    transition: 0.3s linear;
+}
+.buy{
+    border: 7.5px solid rgba(255, 255, 255, 0);
+    left: 0%;
+    top: 0%;
+    width: 240px;
+    height: 268px;
+    position: absolute;
+}
+.collection li:hover .buy {
+    border: 7.5px solid rgba(255, 255, 255, 0.7);
+    background-color:rgba(0, 0, 0, 0.6);
+    transition: 0.3s linear;
+}
+.icons {
+    opacity: 0;
+    width: 166px;
+    height: 107px;
+    padding: 0px;
+    top: 30%;
+    left: 18%;
+    position: absolute;
+    border: none;
+}
+.collection li:hover .icons {
+    opacity: 1;
+    transition: 0.3s linear;
+}
+.iconsli {
+    width: 50px;
+    height: 50px;
+}
+.iconsli:nth-child(-n+2) {
+    margin-right: 8px;
+}
+.iconsli {
+    margin-bottom: 6px;
+}
+.icon {
+    background: transparent;
+    background-image: url(img/heart.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 1px solid white;
+    transition: background-size 0.3s linear;
+}
+.icon2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    background-image: url(img/share.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-size 0.3s linear;
+}
+.icon3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    background-image: url(img/watch.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-size 0.3s linear;
+}
+.iconsli2 {
+    width: 166px;
+    height: 50px;
+}
+.icon4 {
+    background: #323232;
+    width: 166px;
+    height: 50px;
+    position: absolute;
+    background-image: url(img/cart.png);
+    background-size: 28px;
+    background-position: 7% 40%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s linear;
+}
+.add-cart {
+    text-transform: uppercase;
+    margin: 0px;
+    font-size: 14px;
+    color: white;
+    float: right;
+}
+.pow:hover {
+    background-size: 35px;
+    border: none;
+    background-color: #1abc9c;
+    transition: 0.3s linear;
+}
+
+footer {
+    height: 90px;
+    background-color: #323232;
+}
+.footer {
+    padding-top: 35px;
+    text-align: center;
+}
+footer p {
+    margin: 0px;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+}
+footer a {
+    display: inline-block;
+    color: #1abc9c;
+    font-size: 16px;
+}
